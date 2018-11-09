@@ -1,0 +1,7 @@
+<view class='wrap'>
+  <view class="warning">
+    <text>您要先登陆才能正常使用购物车\n</text>
+    <text>快去登陆吧</text>  
+  </view>
+  <button class='btn' bindtap="toLogin">去 登 陆</button>
+</view>

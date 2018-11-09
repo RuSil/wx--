@@ -1,0 +1,89 @@
+<!-- 搜索框 -->
+<view class="weui-search-bar">
+  <!-- 外层背景 -->
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14" color='white'></icon>
+      <input type="text" class="weui-search-bar__input" 
+        placeholder="搜索" placeholder-class="placeholder"/>
+    </view>
+  </view>
+</view>
+
+<!-- 导航栏 -->
+<view class="weui-tab">
+  <view class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+        <view class="weui-navbar__title">{{item}}</view>
+      </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+  </view>
+
+  <!-- 选项卡 -->
+  <view class="weui-tab__panel">
+    <!-- 选项一的内容 -->
+    <view>
+      <!-- 轮播图 -->
+      <navigator url='/pages/mall/mall' open-type='switchTab'>
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+        <view wx:for="{{broadcast}}" wx:for-index="index" wx:key='index'>  
+          <swiper-item>  
+            <image src="{{item.image}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </view>  
+        </swiper> 
+      </navigator>
+      <!-- 轮播图下文字 -->
+      <view class='remarks'>
+        <view>
+          <icon class='iconfont icon-tickcheckmarkac icon-small'></icon>正品保证
+        </view>
+        <view>
+          <icon class='iconfont icon-tickcheckmarkac icon-small'></icon>七天退换
+        </view>
+        <view>
+          <icon class='iconfont icon-tickcheckmarkac icon-small'></icon>极速退款
+        </view>
+        <view>
+          <icon class='iconfont icon-tickcheckmarkac icon-small'></icon>全场包邮
+        </view>      
+      </view>
+      <!-- 广告图 -->
+      <navigator  url='/pages/mall/mall' open-type='switchTab'>
+        <image src='https://coolbuy-minapp.ifanrusercontent.com/venue/1111/home-banner.gif' class='banner'></image>
+      </navigator>
+      <!-- 好物拼团 -->
+      <view class='collage' url='/pages/mall/mall' open-type='switchTab'> 
+        <view class='collage-top'>
+          <text>好物拼团</text>
+        </view>  
+        <navigator class='collage-part weui-flex' url='/pages/mall/mall' open-type='switchTab'
+          wx:for="{{teamBuy}}" wx:key="{{index}}">
+          <image src='{{item.display_image}}'></image>
+          <view class='collage-part-item'>
+            <view class='part-title'>{{item.product_title}}</view>
+            <view class='part-price'>拼团价 <b>￥{{item.discount_price}}</b></view>
+          </view>
+        </navigator> 
+      </view>
+      <!-- 活动推荐 -->
+      <view class='recommend'>
+        <view class='recommend-top'>
+          <text>活动推荐</text>
+        </view>  
+        <scroll-view scroll-x class='recommend-bottom'>
+          <navigator  url='/pages/mall/mall' open-type='switchTab'
+            class='recommend-bottom-item' wx:for="{{recommend}}" wx:key="{{index}}">
+            <image src='{{item.cover_image}}'></image>
+            <view>
+              <view class='recommend-bottom-title'>{{item.name}}</view>
+              <view class='recommend-bottom-summary'>{{item.english_name}}</view>
+            </view>
+          </navigator> 
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

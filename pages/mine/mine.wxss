@@ -1,0 +1,133 @@
+.icon-small{
+  font-size: 15px;
+}
+page{
+  height: 100%;
+}
+.bg{
+  height: 20rpx;
+  background-color: #EEEFF1;
+}
+/* 登陆状态 */
+.login-status{
+  padding: 30rpx 50rpx;
+  font-size: 40rpx;
+  color: #969696;
+  height: 150rpx;
+}
+.login-text{
+  float: left;
+}
+.login-text .h1{
+  font-size: 34rpx;
+  color: black;
+}
+.login-text .h2{
+  font-size: 26rpx;
+}
+/* 未登录头像 */
+.person-image image{
+   width: 150rpx;
+  height: 150rpx;
+  float: right;
+}
+/* 已登陆样式 */
+.user-left{
+  float: left;
+}
+.userNickName{
+  font-size: 60rpx;
+  display: block;
+}
+.userNickName-h2{
+  font-size: 26rpx;
+}
+.person-image{
+  width: 170rpx;
+  height: 170rpx;
+  float: right;
+  position:relative;
+  top: -8rpx;
+}
+/* 订单状态 */
+.order-status{
+  padding: 0 40rpx;
+  margin: 20rpx 0;
+}
+.person-order{
+  font-size: 30rpx;
+  padding-bottom: 30rpx;
+}
+.order-right{
+  float: right;
+  color: #969696;
+}
+
+/* 进度事项 */
+.weui-flex{
+  padding-top: 30rpx;
+  justify-content:space-around; 
+  text-align: center;
+}
+.weui-flex text{
+  font-size: 26rpx;
+}
+
+/* 三单有礼 */
+.activity{
+  padding: 0 30rpx;
+  margin: 20rpx 0;
+}
+.activity-top{
+  border-bottom: 3rpx solid #E7E7E7;
+  }
+.progress-container{
+  padding-top: 30rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.progress-item{
+  position: relative;
+  height: 40rpx;
+  width: 40rpx;
+  border: 2px solid #ccc;
+  background: #e7e7e7;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 20rpx;
+  color: #fff;
+  z-index: 1;
+}
+.progress-bar{
+  width: 60%;
+  position: absolute;
+  top: 62.5%;
+  left: 0;
+  right: 0; 
+  margin: auto;
+  transform: translateY(-50%);
+  height: 2rpx;
+  background: #ccc;
+}
+.progress-text-container{
+  display: flex;
+  justify-content: space-around;
+}
+.progress-text{
+  font-size: 26rpx;
+  line-height:38rpx;
+  color: #959595;
+}
+.activity-notice{
+  font-size: 25rpx;
+}
+.activity-notice-text{
+  position: relative;
+  top: 7rpx;
+  left: 10rpx;
+}
+.service{
+  padding-bottom: 16rpx;
+}

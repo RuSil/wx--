@@ -1,0 +1,16 @@
+page{
+  background-color: #EEEFF1;
+} 
+.wrap{
+  margin-top: 350rpx;
+}
+.warning{
+  font-size: 29rpx;
+  text-align: center;
+  color: #C7C7C7;
+}
+.btn{
+  margin-top: 80rpx;
+  background-color: #FA3653;
+  color:white;
+}

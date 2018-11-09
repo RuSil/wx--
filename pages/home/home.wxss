@@ -1,0 +1,134 @@
+.icon-small{
+  font-size: 26rpx;
+  position: relative;
+  top: -12rpx;
+  padding-right: 6rpx;
+}
+page{
+  height: 100%;
+  box-sizing: border-box;
+} 
+
+/* 搜索框 */
+.weui-search-bar{
+  background-color: #F73451;
+  border: none;
+}
+.weui-search-bar__form{
+  background-color: #DF2F49;  
+  border: none;
+  border-radius:32rpx;
+}
+input .placeholder{
+ color: white;
+}
+
+/* 导航栏 */
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.weui-navbar{
+  overflow: auto;
+  background-color:  #F73451;
+  color: white;
+}
+.weui-tab__panel{
+  padding-top: 28px;
+}
+.weui-navbar__item{
+  padding: 10rpx 0;
+}
+.weui-navbar__title{
+  font-size: 12px;
+  padding:0 8rpx;
+}
+/* 轮播图 */
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+/* 轮播图下文字 */
+.remarks{
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+  font-size: 22rpx;
+}
+/* banner图 */
+.banner{
+  background-color: paleturquoise;
+  width: 100%;
+  height: 100px;
+  font-size: 0;
+}
+
+/* 好物拼团 */
+.collage{
+  padding: 20rpx;
+  height: 540rpx;
+}
+.collage-top text{
+  font-size: 30rpx;
+  border-bottom: 8rpx solid #16B37C;
+  margin-bottom: 30rpx;
+}
+.collage-part{
+  margin-top: 30rpx;
+}
+.collage-part-item{
+  margin-bottom: 10rpx;
+}
+.collage-part image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.collage-part .part-title{
+  font-size: 30rpx;
+  margin: 20rpx;
+}
+.collage-part .part-price{
+  font-size: 30rpx;
+  color: red;
+  margin: 20rpx;
+}
+
+/* 活动推荐 */
+.recommend{
+  padding: 20rpx;
+  height: 540rpx;
+}
+.recommend-top {
+  margin-bottom: 30rpx;
+}
+.recommend-top text{
+  font-size: 30rpx;
+  border-bottom: 8rpx solid #16B37C;
+}
+.recommend-bottom{
+  display: flex;
+  white-space: nowrap;
+  height: 400rpx;
+}
+.recommend-bottom-item{
+  display: inline-block;
+  margin-right: 12px;
+}
+.recommend-bottom-item image{
+  width: 460rpx;
+  height: 258rpx;
+  margin-bottom: 24rpx;
+}
+.recommend-bottom-title{
+  font-size: 15px;
+    color: rgb(1, 1, 1);
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+.recommend-bottom-summary{
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: rgb(149, 149, 149);
+  line-height: 18px;
+}
+    

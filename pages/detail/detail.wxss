@@ -1,0 +1,145 @@
+swiper{
+  height: 380px;
+  width: 100%;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+.bottom{
+  width: 100%;
+  border-top: 1px solid ;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-events{
+  text-align: center;
+  margin: 0 15rpx;
+}
+.bottom-events image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.bottom-events text{
+  display: block;
+  font-size: 22rpx;
+}
+.bottom-buy{
+  margin: 10rpx;
+  line-height: 50px;
+  background-color: pink;
+  color: white;
+}
+.bottom-buy text{
+  padding: 0 20rpx;
+  display: inline-block;
+}
+.bottom-buy text:first-child{
+  background: rgb(251, 94, 118);
+}
+.bottom-buy text:last-child{
+  background: rgb(247, 52, 81);
+}
+
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*弹出框 */
+.commodity_attr_box {
+  height: 900rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+  overflow: visible;
+  font-size: 30rpx;
+}
+
+/* 对话框边距
+.border-distance{
+  padding: 0 40rpx;
+} */
+
+/* 商品简介 */
+.modal-summary {
+  height: 150rpx;
+  border-bottom: 1px solid;
+  padding-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+/* 商品缩略图 */
+.modal-summary image{
+  width: 235rpx;
+  height: 235rpx;
+  background-color: pink;
+  position: absolute;
+  top: -35rpx;
+  margin-left: 40rpx;
+}
+.summary-text{
+  margin-left: 300rpx;
+}
+.modal-style {
+  margin-left: 40rpx;
+}
+/* 款式选项 */
+.modal-style-text{
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal-style-text text{
+  margin: 30rpx 16rpx;
+  border: 1px solid;
+  padding: 0 30rpx;
+}
+
+/* 购买数量 */
+.modal-number{
+  padding: 30rpx;
+  width: 100%;
+  border-top: 1px solid;
+  position: absolute;
+  bottom: 150rpx;
+}
+.modal-number-text{
+  float: left;
+  position: absolute;
+  top: 40rpx;
+}
+.modal-number-btn{
+  float: left;
+  margin-left: 520rpx;
+}
+.modal-number-btn text{
+  display: inline-block;
+  font-size: 26rpx;
+  padding: 16rpx;
+  border:1px solid;
+}
+/* 购买按钮 */
+.btn-buy{
+  margin:0 30rpx;
+  position: absolute;
+  bottom: 40rpx;
+  width: 90%;
+  color: white;
+  background-color:rgb(247, 52, 81); 
+}

@@ -1,0 +1,53 @@
+/* 选项栏 */
+.list-options{
+  display: flex;
+  white-space: nowrap;
+  font-size: 40rpx;
+  position: fixed;
+  height: 60rpx;
+  background-color: white;
+}
+.titles{
+  margin: 0 20rpx;
+  display: inline-block;
+  font-size: 30rpx;
+}
+
+/* 列表内容 */
+.list-sales{
+  padding: 20rpx;
+  height: 100%;
+  padding-top: 40rpx;
+}
+.content{
+  width: 340rpx;
+  float:left;
+  height: 445rpx;
+  text-align: center;
+}
+.content text{
+  display: block;
+  width: 320rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content image{
+  width:90%;
+  height:300rpx;
+  padding: 0 20rpx;
+}
+.content .summary text{
+  font-size: 24rpx;
+  color: #f68d08;
+  
+}
+.content .title{
+  font-size: 26rpx;
+}
+.content .price{
+  font-size: 24rpx;
+  color: red;
+}
+
+

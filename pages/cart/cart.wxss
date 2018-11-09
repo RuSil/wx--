@@ -1,0 +1,105 @@
+page{
+  background-color: #EEEFF1;
+} 
+
+/* 购物车商品列表界面 */
+.cart-list{
+  margin: 28rpx;
+  background-color: white;
+  margin-bottom: 90rpx;
+}
+/* 每个商品的样式 */
+.goods-info{
+  padding: 30rpx;
+  height: 200rpx;
+  display: flex;
+  position: relative;
+}
+.goods-info .delete{
+  position: absolute;
+  right: 25rpx;
+  top: 5rpx;
+}
+/* 选中框 */
+.goods-info .goods-check{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 40%;
+  left: 8rpx;
+}
+.goods-info .goods-img{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: pink;
+  margin:0 20rpx 0 40rpx;
+}
+.goods-info .goods-text{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+/* 商品名称 */
+.goods-text-name{
+  width: 160px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  line-height: 21px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* 商品款式 */
+.goods-text-style{
+  color: rgb(149, 149, 149);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.goods-info .goods-number{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 商品价格 */
+.goods-price{ 
+  color: rgb(250, 54, 83);
+}
+.goods-info .goods-count text{
+  display: inline-block;
+  font-size: 22rpx;
+  padding: 16rpx;
+  border:1px solid;
+}
+
+/* 底部结算部分 */
+.all-content{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 41.8133px;
+    line-height: 41.8133px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10.24px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.all-content .goods-check{
+  width: 50rpx;
+  height: 50rpx;
+}
+.btn{
+    height: 30.72px;
+    line-height: 30.72px;
+    width: 85.3333px;
+    font-size: 13.6533px;
+    text-align: center;
+    background-color: rgb(250, 54, 83);
+    color: rgb(255, 255, 255);
+    border-radius: 15.36px;
+}

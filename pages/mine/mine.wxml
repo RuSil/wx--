@@ -1,0 +1,121 @@
+<!-- 顶部登陆状态 -->
+<view class='login-status' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+  <view class='login-text' bindtap='bindGetUserInfo' wx:if="{{unLogin}}"> 
+    <text class='h1'>未登录\n</text>
+    <text class='h2'>点击登陆好物商店</text>
+  </view>
+  <view wx:else class='user-left'>
+    <open-data type="userNickName" class='userNickName'></open-data>  
+    <text class='userNickName-h2'>查看并编辑个人资料</text>    
+  </view>
+  <view class='person-image'>
+    <image src='../../assets/img/unlogin.png'  wx:if="{{unLogin}}"></image>
+    <open-data type="userAvatarUrl" class="userImg" wx:else >\n</open-data>
+  </view>
+</view>
+
+<view class='bg'></view>
+<!-- 订单状态 -->
+<view class='order-status'>
+  <navigator class='person-order' url='/pages/cart/cart' open-type='switchTab'>
+    <text>我的订单</text>
+    <text class='order-right'>查看全部订单</text>
+  </navigator>
+  <!-- 进度条 -->
+   <view class="weui-progress__bar">
+      <progress percent="0" stroke-width="3" />
+    </view>
+  <!-- 进度事项 -->
+  <view class='events weui-flex'>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-payment'></icon></view>
+      <text>待付款</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-member'></icon></view>
+      <text>待成团</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-deliver'></icon></view>
+      <text>待发货</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-delivergoods'></icon></view>
+      <text>待收货</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-Aftersale'></icon></view>
+      <text>售后服务</text>
+    </view>
+  </view>
+</view>
+<view class='bg'></view>
+
+<!-- 三单有礼 -->
+<navigator class='activity' url='/pages/cart/cart' open-type='switchTab'>
+  <view class='person-order activity-top'>
+    <text>三单有礼</text>
+    <text class='order-right'>查看详情</text>
+  </view>
+  <view class='three-points'>
+    <view class='progress-container'>
+      <view class='progress-item'></view>
+      <view class='progress-item'></view>
+      <view class='progress-item'></view>   
+      <view class='progress-bar'></view>   
+    </view>
+    <view class='progress-text-container'>
+      <view class='progress-text'>第1单</view>
+      <view class='progress-text'>第2单</view>
+      <view class='progress-text'>第3单</view>      
+    </view>
+  </view>
+  <view class='activity-notice'>
+      <icon class='iconfont icon-horn icon-small'></icon>
+      <text class='activity-notice-text'>每下3笔有效订单，确认收货后，可以获得优惠券</text>
+  </view>
+</navigator>
+<view class='bg'></view>
+
+<!-- 我的服务 -->
+<view class='activity'>
+  <view class='person-order activity-top'>
+    <text>我的服务</text>
+  </view>
+</view>
+<view class='events weui-flex activity-top service'>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-youhuiquan'></icon></view>
+      <text>优惠券</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-gifts'></icon></view>
+      <text>礼物</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-emaxcitygerenxinxitubiaoji02'></icon></view>
+      <text>收藏</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-staff'></icon></view>
+      <text>好物星探</text>
+    </view>
+  </view>
+  <view class='events weui-flex service'>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-iconfont04'></icon></view>
+      <text>客服</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-address'></icon></view>
+      <text>地址</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-email'></icon></view>
+      <text>意见反馈</text>
+    </view>
+    <view weui-flex__item>
+      <view><icon class='iconfont icon-info'></icon></view>
+      <text>关于我们</text>
+    </view>
+  </view>

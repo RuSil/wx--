@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/mall/mall",
+    "pages/cart/cart",
+    "pages/cart-unlogin/cart-unlogin",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F73451",
+    "navigationBarTitleText": "好物商店",
+    "navigationBarTextStyle":"white",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "selectedColor": "red",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "assets/icon/home.png",
+      "selectedIconPath": "assets/icon/home-selected.png"
+    }, {
+      "pagePath": "pages/mall/mall",
+      "text": "分类",
+      "iconPath": "assets/icon/glass.png",
+      "selectedIconPath": "assets/icon/glass-selected.png"
+    }, {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "assets/icon/cart.png",
+      "selectedIconPath": "assets/icon/cart-selected.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "assets/icon/member.png",
+      "selectedIconPath": "assets/icon/member-selected.png"
+    }]
+  }
+}

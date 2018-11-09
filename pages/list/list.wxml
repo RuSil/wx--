@@ -1,0 +1,26 @@
+<!-- 滚动选项条 -->
+<scroll-view scroll-x class='list-options'>
+  <view wx:for="{{optionTitles}}" class='titles' wx:key="index" bindtap='toLink' data-index="{{index}}">
+    {{item.name}}
+  </view>
+</scroll-view>
+
+<!-- 列表 -->
+<view class="list-sales">
+  <view class='content' wx:for="{{currentList}}" wx:key="{{index}}" 
+  bindtap="toDtail" data-id="{{item.id}}">
+    <image src="{{item.cover_image}}"></image>
+    <view class='summary'>
+     <text>{{item.summary}}</text>
+    </view>
+    <view class='title'>
+      <text>{{item.title}}</text>
+    </view>    
+    <view class='name'>
+      <text>{{item.name}}</text>
+      </view>
+    <view class='price'>
+      <text>￥{{item.price}}</text>
+    </view>
+  </view>
+</view>
